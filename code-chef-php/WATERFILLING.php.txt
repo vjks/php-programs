@@ -1,0 +1,19 @@
+<?php
+
+$tests = readline();
+
+for($i = 0; $i < $tests; $i++) {
+    list($b1, $b2, $b3) = explode(" ", readline());
+    $fill_water = False;
+    if($b1 == 0 and $b2 == 0)
+        $fill_water = True;
+    elseif($b2 == 0 and $b3 == 0)
+        $fill_water = True;
+    elseif($b3 == 0 and $b1 == 0)
+        $fill_water = True;
+    
+    if($fill_water)
+        print("Water filling time\n");
+    else
+        print("Not now\n");
+}
