@@ -1,3 +1,5 @@
+<?php
+
 $input = "A sentence terminated by ;
 
 Another sentence terminated by;
